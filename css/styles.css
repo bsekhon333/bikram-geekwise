@@ -1,7 +1,311 @@
-h1 {
-     color:#339900;
+/*==============GLOBAL STYLES=================*/
+
+@import url(https://fonts.googleapis.com/css?family=Nunito|Francois+One|Bangers);
+
+html, body {
+     width:100%;
+     height:100%;
+     margin:0px;
+     padding:0px;
+}
+
+body {
+     background-color:#F1F1F1;
+     font-family:'Source Sans Pro' , Trebuchet MS , san-serif ;
+     /*font-family: 'Nunito', sans-serif;*/
+     /*font-family: 'Francois One', sans-serif;*/
+     /*font-family: 'Bangers', cursive;*/
+     font-size:16px ;
+     /*font-weight:700;*/
+     color:#FFFFFF
+}
+
+body {
+     color:#000000;
+}
+
+h1, h2, h3, h4 {
+     margin:0px;
+     padding:0px;
+     color:#663399;
+     font-family: 'Bangers', cursive;
+     font-size:2em;
 }
 
 p {
-     color:#CC0000;
+     line-height:125%;
+     margin:15px 0px;
+     font-family:'Nunito', sans-serif;;
+}
+
+b, strong {
+     color:#663399;
+     
+}
+
+a {
+     color:#663399;
+     text-decoration:none;
+}
+
+a:hover {
+     color:#000000;
+
+}
+.mainBody {
+     overflow:hidden;
+     margin:0px auto;    /*THE MARGIN AUTO HAS TO BE USED WITH WIDTH*/
+     width:1200px;
+}
+
+
+
+/*=============HEADER STYLES==============*/
+
+header {
+     background-color:#CCCCCC;
+     padding:5px 0px;
+     
+}
+
+#headerBlocker {
+     padding:20px 0px;
+}
+
+#logo a {
+     color:#000000; /*Secondary Color*/
+}
+
+#logo a:hover {
+     color:#663399;
+}
+
+
+/*MENU NAVIGATION*/
+
+#menu {
+     position:absolute;
+     top:20px;
+     right:20px;
+     
+}
+
+#menu ul {
+     display:inline-block;
+}
+
+
+#menu ul li {
+     display:block;
+     float:left;
+     text-align:center;
+     margin:0px 10px;
+     color:#663399;
+     font-family: 'Bangers', cursive;
+     font-size:1.5em;
+}
+
+.currentPage {
+     color:#FFFFFF;
+     background-color:#663399;
+     padding:10px;
+     border-radius:20px;
+     
+}
+
+
+/*
+=======================================================
+BANNER STYLES
+=======================================================
+*/
+
+#bannerHome {
+     overflow:scroll;
+     padding:125px 0px;
+     border-top:3px solid #663399;
+     background-size:cover;
+     background:url(../images/banner-home-image.jpg) no-repeat top center;
+     
+}
+
+.bannerText {
+     color:#FFFFFF;
+     font-size:4em;
+     /*text-align:center;*/
+     text-shadow:7px 7px 10px #000000;
+     font-size:1;
+}
+
+/*============ MAIN SECTION STYLES | INCLUDING COLUMNS======================*/
+
+.columnA, .columnB, .columnC {
+     width:384px;
+}
+
+.columnA, .columnB {
+     float:left;
+     margin-right:24px;
+}
+
+.columnC {
+     float:left;
+}
+
+
+
+.columnA h2, .columnB h2, .columnC h2 {
+     font-size:3em;
+     font-weight:700;
+     text-align:center;
+     line-height:1em;
+     margin:15px 0px;
+     
+}
+
+.columnA p, .columnB p, .columnC p {
+     padding:0px;
+     text-align:justify;
+     
+}
+
+.column span {
+     background-color:#663399;
+     color:#FFFFFF;
+     display:block;
+     font-size:1.5em;
+     font-weight:600;
+     margin:0px;
+     padding:15px;
+     text-align:center;
+     text-transform:uppercase;
+     
+}
+
+
+
+
+
+
+
+
+/*===============STANDARD STYLES===========================*/
+
+
+
+/*=============BUTTON STYLES==========================*/
+
+div.center  {
+     text-align:center;
+}
+
+
+a.button {
+     display:inline-block;
+     padding:10px 18px;
+     background-color:#663399;
+     text-transform:uppercase;
+     font-weight:800;
+     font-size:2em;
+     font-family: 'Bangers', cursive;
+     color:#FFFFFF;
+     border-radius:4px;
+     margin:10px 0px;
+     transition:background 0.6s linear 0s, color 0.6s linear 0s;
+}
+
+a.button:hover {
+     background-color:#000000;
+     color:#FFFFFF;
+     transition:background 0.6s linear 0s, color 0.6s linear 0s;
+}
+
+
+/*==============ABOUT ME STYLES SECTION=============*/
+#aboutme {
+     margin:25px 0px;
+}
+
+.asideLeft {
+     width:384px;
+     float:left;
+     margin-right:24px;
+     
+}
+
+.article-home-left p {
+     text-align:justify;
+     
+     
+}
+
+/*==============FOOTER=============*/
+
+#copyright {
+     overflow:hidden;
+     padding:30px 0px;
+     border-top:3px dotted #663399;
+     background:#efe7f7;
+     display:block;
+     text-align:center;
+}
+
+/*============SOCIAL MEDIA STYLES===============*/
+
+.fa {
+     background-color:rgb(102,51,153);
+     border:3px solid #FFFFFF;
+     border-radius:100%;
+     font-size:2em !important;
+     margin:15px;
+     padding:10px;
+     color:#FFFFFF;
+     height:28px;
+     width:28px;
+     transition:background 0.6s linear 0s, color 0.6s linear 0s;
+     
+}
+
+.fa-facebook {
+     background-color:#0c516e;
+}
+
+.fa-twitter {
+     background-color:#8CA6D9;
+}
+
+.fa:hover {
+     background-color:#000000;
+}
+
+
+
+/*============================ABOUT PAGE STYLES===========================*/
+
+.about h2 {
+     color:#FFFFFF;
+     background-color:#663399;
+     padding-bottom:20px;
+     border-top:3px solid #000000;
+     
+     
+}
+
+#aboutMeHeading {
+     padding-top:10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+#form {
+     margin-top:40px;
+     
 }
